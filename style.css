@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css?family=Voltaire");
+#world {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #dbe6e6;
+  overflow: hidden;
+}
+::selection {
+  background-color: lightskyblue;
+  color: black;
+}
+body {
+ background-color:transparent;
+background-size:500px;
+background-repeat:repeat;
+background-image:url("data:image/svg+xml,%3Csvg id='Layer_1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 500'%3E%3Cstyle%3E.st0%7Bfill:rgb(70,130,180)%7D%3C/style%3E%3Cpath class='st0' d='M125 250v125l125 125V375zM250 125L125 0v125l125 125zM250 250v125l125-125V125zM500 250V125L375 0v125zM500 500V375L375 250v125zM125 500V375L0 500zM375 500V375L250 500zM250 0v125L375 0zM0 125L125 0H0zM0 250v125l125-125V125z'/%3E%3C/svg%3E");
+}
+p {
+  margin-top: .3rem;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+button {
+  border: .2rem solid black;
+  outline: none;
+  font-size: 2.5rem;
+  font-weight: 800;
+  font-family: 'Voltaire', sans-serif;
+  cursor: pointer;
+  background-color:rgb(70, 130, 180) ;
+  padding: .7rem;
+  border-radius: .5rem;
+  color: white;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4),
+              5px 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+button:active {
+  margin-top: .3rem;
+  transition: ease-in;
+  box-shadow: none;
+}
+.card {
+  width: 40rem;
+  height: 24rem;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 8%;
+  padding: 1rem;
+  background-color: white;
+  font-family: 'Voltaire', sans-serif;
+  font-size: 1.5rem;
+   text-align: center;
+}
+.head {
+  font-family: 'Voltaire', sans-serif;
+  font-size: 80px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: steelblue;
+ 
+}
+
+#gameoverInstructions {
+  position: absolute;
+  font-family: 'Voltaire', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 120px;
+  text-align: center;
+  color: #ffc5a2;
+  opacity: 0;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  -webkit-transform: translate(-50%, -100%);
+          transform: translate(-50%, -100%);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+}
+#gameoverInstructions.show {
+  opacity: 1;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+}
+
+#dist {
+  position: absolute;
+  left: 50%;
+  top: 50px;
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.label {
+  position: relative;
+  font-family: 'Voltaire', sans-serif;
+  text-transform: uppercase;
+  color: #ffa873;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+#distValue {
+  position: relative;
+  text-transform: uppercase;
+  color: #dc5f45;
+  font-size: 3.5rem;
+  font-family: 'Voltaire';
+  text-align: center;
+}
+
+#credits {
+  position: absolute;
+  width: 100%;
+  margin: auto;
+  bottom: 0;
+  margin-bottom: 20px;
+  font-family: 'Voltaire', sans-serif;
+  color: #544027;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+#credits a {
+  color: #544027;
+}
+
+#credits a:hover {
+  color: #dc5f45;
+}
+
+#instructions {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  margin: auto;
+  margin-bottom: 45px;
+  font-family: 'Voltaire', sans-serif;
+  color: #dc5f45;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.lightInstructions {
+  color: #5f9042;
+}
